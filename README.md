@@ -1,7 +1,7 @@
-repository-name
-# Repository Name
+doppler
+# Doppler
 
-Based on "ABC" at https://www.abc.com/
+Based on "Doppler - The New Era of Secrets Management" at https://www.doppler.com/
 
 ## 100 - Introduction
 
