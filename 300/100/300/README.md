@@ -8,6 +8,6 @@ See [README.md](./100/README.md)
 
 ## 200 - Install the Doppler CLI in GitLab
 
-See [README.md](./100/README.md)
+See [README.md](./200/README.md)
 
 For a complete list see, https://docs.doppler.com/docs/
