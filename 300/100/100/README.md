@@ -4,9 +4,9 @@
 
 See [README.md](./100/README.md)
 
-== WE ARE HERE ==
-
 ## 200 - Set up your first integration
+
+== WE ARE HERE ==
 
 See [README.md](./200/README.md)
 
