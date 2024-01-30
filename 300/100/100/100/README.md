@@ -22,5 +22,22 @@ You will be brought to the ```agility-game-kener``` project page at https://dash
 
 **PRO TIP**: A project starts with development, staging and production environments. You can reorder environments and create custom ones.
 
+Starting with our environments variables for a **development** environment, click on the default grey button called **dev**.
+
+You will be brought to the **dev** environment variables of our project at https://dashboard.doppler.com/workplace/364b965877a9404c6493/projects/agility-game-kener/configs/dev
+
+**PRO TIP**: Store any value in your configs, from passwords and API keys to configuration variables and multi-line certificates and JSON. Add notes to provide some context.
+
+Under the tab **Secrets** click **Add First Secret**.
+
+Start filling in the names and values (here ```********```, but put instead the true value) for each environment variable (click **+ Add Secret** after each entry to go to the next entry).
+
+| NAME | VALUE |
+| -- | -- |
+| GH_TOKEN | ************ |
+| API_TOKEN | *********** |
+
+Click **Save** when done.
+
 MORE ...
 
