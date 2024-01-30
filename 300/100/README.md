@@ -7,3 +7,7 @@ See [README.md](./100/README.md)
 ## 200 - Set up your account
 
 See [README.md](./200/README.md)
+
+## 300 - Installing the Doppler CLI
+
+See [README.md](./300/README.md)
