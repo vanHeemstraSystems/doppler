@@ -39,5 +39,7 @@ Start filling in the names and values (here ```********```, but put instead the 
 
 Click **Save** when done.
 
+When prompted, tick the check boxes for the environments these secrets belong to (here: just Development) and click **Save**.
+
 MORE ...
 
