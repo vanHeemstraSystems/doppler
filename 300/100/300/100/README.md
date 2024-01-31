@@ -4,7 +4,7 @@ See [GitPod](https://docs.doppler.com/docs/gitpod).
 
 In short:
 
-Create a doppler.yaml file at the root of your repository, with the following content:
+Create a ```doppler.yaml``` file at the root of your repository, with the following content:
 
 ```
 setup:
