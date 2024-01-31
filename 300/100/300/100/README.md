@@ -51,7 +51,7 @@ The Doppler environment variables (here: GH_TOKEN and API_TOKEN) will thus be in
 
 And then **manually**:
 1. copy the file ```config/monitors.example.yaml``` to ```config/monitors.yaml``` and apply any changes - if required - in the copy.
-2. copy the file ```config/monitors.example.yaml``` to ```config/monitors.yaml``` and apply any changes - if required - in the copy.
+2. copy the file ```config/site.example.yaml``` to ```config/site.yaml``` and apply any changes - if required - in the copy.
 3. run the following command from the terminal:
 
 ```
