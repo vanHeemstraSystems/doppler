@@ -47,10 +47,10 @@ tasks:
       doppler run -- npm run kener:build
 ```
 
+The Doppler environment variables (here: GH_TOKEN and API_TOKEN) will thus be injected in the environment, whilst at the same time injecting any environment variables that are exported from the ```.gitpod.yml``` file (mostly, non-secret variables), such as PUBLIC_KENER_FOLDER 
+
 And then **manually** run the following command from the terminal:
 
 ```
 $ npm run kener
 ```
-
-The Doppler environment variables (here: GH_TOKEN and API_TOKEN) will thus be injected in the environment, whilst at the same time injecting any environment variables that are exported from the ```.gitpod.yml``` file (mostly, non-secret variables), such as PUBLIC_KENER_FOLDER 
