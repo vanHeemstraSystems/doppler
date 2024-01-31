@@ -35,17 +35,16 @@ tasks:
       doppler configure set token $DOPPLER_LOCAL_TOKEN
       doppler setup --project agility-game-kener --config dev
       mkdir -p ./static/kener
-      env:
-        PUBLIC_KENER_FOLDER=/workspace/kener/static/kener
-        NODE_ENV=production
-        PORT=3000
-        API_IP=127.0.0.1
-        MONITOR_YAML_PATH=/config/monitors.yaml
-        SITE_YAML_PATH=/config/site.yaml
-  -  init: |
-       npm install -g npm@10.4.0
-       npm install
-       doppler run --mount .env -- npm run build
+  - init: |
+      npm install -g npm@10.4.0
+      npm install
+      export PUBLIC_KENER_FOLDER=/workspace/kener/static/kener
+      export NODE_ENV=production
+      export PORT=3000
+      export API_IP=127.0.0.1
+      export MONITOR_YAML_PATH=/config/monitors.yaml
+      export SITE_YAML_PATH=/config/site.yaml
+      doppler run -- npm run build
 ```
 
 And then **manually** run the following command from the terminal, AFTER having configured the ```.env``` file (as well as the ```config/monitor.yaml``` and ```config/site.yaml``` files):
