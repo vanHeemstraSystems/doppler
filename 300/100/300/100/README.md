@@ -34,7 +34,12 @@ tasks:
   ...
   -  init: |
        npm install
-       doppler run --mount .env -- npm run build
+```
+
+And then **manually** run the following command from the terminal, AFTER having configured the ```.env``` file (as well as the ```config/monitor.yaml``` and ```config/site.yaml``` files):
+
+```
+$ doppler run --mount .env -- npm run build
 ```
 
 The Doppler environment variable will thus be injected in the environment, whilst at the same time injecting any environment variables that are stored in a .env file (mostly, non-secret variables). 
