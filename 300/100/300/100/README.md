@@ -19,3 +19,20 @@ You will be prompted alike following:
 | DOPPLER_ENVIRONMENT | dev | |
 | DOPPLER_PROJECT | agility-game-kener | |
 | GH_TOKEN | github_pat_******** | |
+
+To run the application's start (e.g., build) command, prefix it as follows (NOTE: including the ```--```):
+
+```
+$ doppler run -- npm install && npm run build
+```
+
+**NOTE**: If set up in .gitpod.yml, this would become:
+
+```
+...
+tasks:
+  ...
+  -  init: doppler run -- npm install & npm run build
+```
+
+The Doppler environment variable will thus be injected in the environment. 
