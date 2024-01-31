@@ -23,7 +23,7 @@ You will be prompted alike following:
 To run the application's start (e.g., build) command, prefix it as follows (NOTE: including the ```--```):
 
 ```
-$ doppler run -- npm install && npm run build
+$ npm install && doppler run --mount .env -- npm run build
 ```
 
 **NOTE**: If set up in .gitpod.yml, this would become:
@@ -34,7 +34,7 @@ tasks:
   ...
   -  init: |
        npm install
-       doppler run -- npm run build
+       doppler run --mount .env -- npm run build
 ```
 
-The Doppler environment variable will thus be injected in the environment. 
+The Doppler environment variable will thus be injected in the environment, whilst at the same time injecting any environment variables that are stored in a .env file (mostly, non-secret variables). 
