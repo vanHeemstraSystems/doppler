@@ -60,3 +60,24 @@ And then **manually**:
 ```
 $ doppler run -- npm run kener
 ```
+
+After a while you will be prompted:
+
+```
+> kener@0.0.6 kener
+> cross-env NODE_ENV=production node prod.js
+
+✅ PUBLIC_KENER_FOLDER is  /workspace/kener/static/kener
+✅ process.env.NODE_ENV is set. Value is production
+✅ GH_TOKEN is set
+✅ API_TOKEN is set
+✅ API_IP is set
+✅ MONITOR_YAML_PATH is set
+✅ SITE_YAML_PATH is set
+✅ PORT is set. Value is 3000
+All tasks completed
+STATUS_OK true
+Kener is running on port 3000!
+```
+
+You can see the web site by opening a new browser window and appending the URL of GitPod with ```3000-```, like ```https://3000-agilitygame-kener-SOME-RANDOM-STRING.ws-eu107.gitpod.io/```.
