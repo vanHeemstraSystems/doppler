@@ -2,17 +2,6 @@
 
 See [GitPod](https://docs.doppler.com/docs/gitpod).
 
-In short:
-
-Create a ```doppler.yaml``` file at the root of your repository, with the following content:
-
-```
-setup:
-  - project: agility-game-kener
-  - config: dev
-```
-doppler.yaml
-
 To test if the Doppler secrets (i.e. the environment variables hosted in Doppler) are accessible and set, run:
 
 ```
@@ -38,12 +27,25 @@ $ npm install -g npm@10.4.0 && npm install && doppler run --mount .env -- npm ru
 **NOTE**: If set up in .gitpod.yml, this would become:
 
 ```
-...
+image:
+  file: .gitpod.Dockerfile
+
 tasks:
-  ...
+  - before: | 
+      doppler configure set token $DOPPLER_LOCAL_TOKEN
+      doppler setup --project agility-game-kener --config dev
+      mkdir -p ./static/kener
+      env:
+        PUBLIC_KENER_FOLDER=/workspace/kener/static/kener
+        NODE_ENV=production
+        PORT=3000
+        API_IP=127.0.0.1
+        MONITOR_YAML_PATH=/config/monitors.yaml
+        SITE_YAML_PATH=/config/site.yaml
   -  init: |
        npm install -g npm@10.4.0
        npm install
+       doppler run --mount .env -- npm run build
 ```
 
 And then **manually** run the following command from the terminal, AFTER having configured the ```.env``` file (as well as the ```config/monitor.yaml``` and ```config/site.yaml``` files):
