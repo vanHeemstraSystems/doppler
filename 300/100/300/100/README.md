@@ -32,7 +32,9 @@ $ doppler run -- npm install && npm run build
 ...
 tasks:
   ...
-  -  init: doppler run -- npm install & npm run build
+  -  init: |
+       npm install
+       doppler run -- npm run build
 ```
 
 The Doppler environment variable will thus be injected in the environment. 
