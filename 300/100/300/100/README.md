@@ -33,6 +33,7 @@ $ npm install && doppler run --mount .env -- npm run build
 tasks:
   ...
   -  init: |
+       npm install -g npm@10.4.0
        npm install
 ```
 
