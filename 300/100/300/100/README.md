@@ -58,5 +58,5 @@ And then **manually**:
 3. run the following command from the terminal:
 
 ```
-$ npm run kener
+$ doppler run -- npm run kener
 ```
