@@ -44,13 +44,13 @@ tasks:
       export API_IP=127.0.0.1
       export MONITOR_YAML_PATH=/config/monitors.yaml
       export SITE_YAML_PATH=/config/site.yaml
-      doppler run -- npm run build
+      doppler run -- npm run kener:build
 ```
 
-And then **manually** run the following command from the terminal, AFTER having configured the ```.env``` file (as well as the ```config/monitor.yaml``` and ```config/site.yaml``` files):
+And then **manually** run the following command from the terminal:
 
 ```
-$ doppler run --mount .env -- npm run build
+$ npm run kener
 ```
 
-The Doppler environment variable will thus be injected in the environment, whilst at the same time injecting any environment variables that are stored in a .env file (mostly, non-secret variables). 
+The Doppler environment variables (here: GH_TOKEN and API_TOKEN) will thus be injected in the environment, whilst at the same time injecting any environment variables that are exported from the ```.gitpod.yml``` file (mostly, non-secret variables), such as PUBLIC_KENER_FOLDER 
