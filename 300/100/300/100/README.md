@@ -23,7 +23,7 @@ You will be prompted alike following:
 To run the application's start (e.g., build) command, prefix it as follows (NOTE: including the ```--```):
 
 ```
-$ npm install && doppler run --mount .env -- npm run build
+$ npm install -g npm@10.4.0 && npm install && doppler run --mount .env -- npm run build
 ```
 
 **NOTE**: If set up in .gitpod.yml, this would become:
